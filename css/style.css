@@ -9,7 +9,10 @@
 #sectionH {
     display: flex;
     flex-direction: column;
+    width: 100%;
     min-height: 100vh;
+    margin-left: 100px;
+    margin-right: 100px;
     background-color: rgba(139, 195, 245);
     justify-content: center;
     align-items: center;
@@ -40,7 +43,7 @@ nav{
     width: 100%;
     font-size: smaller;
 }
-ul{
+#sectionH ul{
     display: flex;
     
     align-items: center;
@@ -61,8 +64,9 @@ a{
 #container {
     display: flex;
     padding: 50px;
+    margin-left: 200px;
 }
-main{
+#container main{
     padding: 100px;
 }
 #container p{
@@ -79,6 +83,8 @@ aside img {
 }
 #inter{
     width:100%;
+    margin-left: 200px;
+    margin-right: 100px;
 }
 #inter h2{
     text-align: center;
@@ -89,11 +95,12 @@ aside img {
 
 #sectionL {
     padding: 0px 20px 0px Opx;
+    margin-bottom: 200px;
+    margin-left: 200px;
     display: flex;
     width: 100%;
     gap: 10px;
-    
-}
+}  
 
 .features {
     display: flex;
@@ -144,7 +151,10 @@ aside img {
 }
 #team{
     width: 100%;
+    margin-left: 200px;
+    margin-bottom: 200px;
     display: flex;
+    gap: 50px;
 }
 .figures{
     display: flex;
@@ -164,6 +174,8 @@ figcaption{
 }
 #team img{
     width: 100%;
+    border-radius: 50%;
+    filter: grayscale(1);
 }
 
 .parallax h2{
@@ -188,3 +200,143 @@ button{
     background-repeat: no-repeat;
     background-size: cover;
   }
+
+  #blog {
+    padding: 0px 20px 0px Opx;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 200px;
+    display: flex;
+    width: 100%;
+    gap: 30px;
+    
+}
+
+  .posts {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+   /* border-radius: 10px;*/
+   /* overflow: hidden;*/
+    /*box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;*/
+    /*transition: 0.5s;*/
+}
+
+.post-header:hover  {
+    transform: scale(1.1);
+    filter: grayscale(1);
+    transition: 1s;
+}
+   
+.post-header {
+    padding: 20px 0px 0px 15px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 300px;
+    color: white;
+    /*background-image: radial-gradient(rgb(139, 195, 245), #1294b8);*/
+    /*transition: 0.5s;*/
+    /*overflow: hidden;*/
+   /* background-attachment: fixed;*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.post-text {
+    padding: 30px;
+    justify-content: left;
+    align-items: flex-start;
+}
+.post-text h3 {
+    font-size: smaller;
+    color:black;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+.post-text p {
+    font-size: 14px;
+    color:black;
+}
+#pricing{
+    margin: 300px;
+}
+#pricing_details{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#pricing_details h2,p {
+    text-align: center;
+}
+
+#creativity {
+    display: flex;
+    width: 100%;
+    padding: 20px 20px;
+}
+#creativity main{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+    width: 100%;
+    justify-content: space-between;
+}
+#creativity form{
+    display: flex;
+    flex-direction: column;
+}
+.pricing_table{
+    display: flex;
+    padding: 50px 50px;
+    gap: 30px;
+    background-color: rgb(222, 226, 229);
+}
+.offer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    background-color:white;
+    gap: 10px;
+}
+#creativity ul{
+    display: flex;
+    flex-direction: column;
+    /*align-items: flex-start;*/
+        
+}
+li{
+    display: flex;
+    flex-direction: column;
+}
+.lists{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+footer{
+    padding: 50px 50px 50px 50px;
+    margin: 50px 50px 50px 50px;
+    color: #c2c4c5;
+    background-color: black;
+}
+.foot-icones{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px;
+}
+footer pre{
+    text-align: center;
+    
+}
+/*#btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: block;
+    }*/
