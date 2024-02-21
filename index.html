@@ -24,7 +24,7 @@
 <body>
     <div id="sectionH">
         <header>
-            <i>Kucra</i>
+            <p>Kucra</p>
             <nav>
                 <ul>
                     <li><a href="#home">HOME</a></li>
@@ -51,15 +51,18 @@
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero ad, natus culpa non hic a, explicabo, accusamus deserunt neque voluptas iure cumque nam. Enim odio exercitationem,
                      soluta doloremque laudantium qui.</p>
                 <form action="" method="POST">
-                    <label for="enter">enter your email</label>
-                    <button type="button" class="btn btn-primary btn-rounded" data-mdb-ripple-init>Subscribe</button>
+                    <div class="input-group mb-3">
+                        <input type="email" class="form-control" id="mail" name="user_mail" placeholder="Enter your email">
+                        <button type="submit" class="btn btn-primary" data-mdb-ripple-init>Subscribe</button>
+                    </div>
                 </form>
+                    
             </main>
             <aside><img src="img/illustration.svg"></aside>
         </div>
     </div>
             
-    <div id="inter">
+    <div id="interprod">
         <h2>Products Features</h2>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
             Tenetur quos quaerat placeat incidunt eveniet nesciunt, voluptate, fugiat laudantium rem dolor molestiae magni magnam sequi eaque repellendus, sit nostrum facere fugit.
@@ -69,7 +72,7 @@
     <div id="sectionL">
         <div class="features">
             <div class="feat-header">
-                <i class="fa-solid fa-globe"></i>>
+                <i class="fa-solid fa-globe"></i>
             </div>
             <div class="feat-text">
                 <h3>Digital Design</h3>
@@ -101,12 +104,20 @@
             </div>
         </div>
     </div>
+    <div id="interteam">
+        <h2>We'r dynamic team of talented people of innovative & marketing expert</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+            Tenetur quos quaerat placeat incidunt eveniet nesciunt, voluptate, 
+            fugiat laudantium rem dolor molestiae magni magnam sequi eaque repellendus, sit nostrum facere fugit.
+        </p>
+    </div>
     <div id="team">
         <div class="figures">
             <h2>1499+</h2>
             <p>Complete project</p>
             <img src="img/person1.png" alt="">
             <figcaption>Anna G. Wilhite</figcaption>
+            <p>Complete project</p>
         </div>
                
         <div class="figures">
@@ -114,6 +125,7 @@
             <p>Satisfied clients</p>
             <img src="img/person2.png" alt="">
             <figcaption>egfkmsm</figcaption>
+            <p>Complete project</p>
         </div>
                 
         <div class="figures">
@@ -121,6 +133,7 @@
             <p>Team members</p>
             <img src="img/person3.png" alt="">
             <figcaption>egfkmsm</figcaption>
+            <p>Complete project</p>
         </div>
                 
         <div class="figures">
@@ -128,10 +141,28 @@
             <p>Employee</p>
             <img src="img/person4.png" alt="">
             <figcaption>egfkmsm</figcaption>
+            <p>Complete project</p>
+        </div>
+    </div>
+
+    <div id="clients">
+        <div id="interclients">
+            <h2>What your clients says</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+            Tenetur quos quaerat placeat incidunt eveniet nesciunt, voluptate, 
+            fugiat laudantium rem dolor molestiae magni magnam sequi eaque repellendus, sit nostrum facere fugit.
+            </p>
+        </div>
+        <div class="logosclients">
+            <img src="img/01.png" alt="">
+            <img src="img/02.png" alt="">
+            <img src="img/03.png" alt="">
+            <img src="img/04.png" alt="">
+            <img src="img/05.png" alt="">
         </div>
     </div>
     
-    <div class="parallax">
+    <div class="parallax" style ="background-image : url(img/parallax.png);">
         <h2>Let's get started with Kucra</h2>
         <p>Get started with...........</p>
         <button><input type="submit" value="Get started"></button>
@@ -198,8 +229,14 @@
         
             <div class="pricing_table">
                 <div class="offer">
-                    <h3>Starter</h3>
-                    <p>9$/month</p>
+                    <div id="head-offer">
+                        <div class="square">
+                            <i class="fa-regular fa-square"></i>
+                        </div>
+                        <h3>Starter</h3>
+                        <p>9$/month</p>    
+                    </div>
+                    
                     <div class="lists">
                         <ul>
                             <li>Brandwith</li>
@@ -219,8 +256,13 @@
                     <button type="button" class="btn btn-primary" data-mdb-ripple-init>Join now</button>
                 </div>
                 <div class="offer">
-                    <h3>Starter</h3>
-                    <p>19$/month</p>
+                    <div id="head-offer">
+                        <div class="square">
+                            <i class="fa-regular fa-square"></i>
+                        </div>
+                        <h3>Starter</h3>
+                        <p>19$/month</p>
+                    </div>
                     <div class="lists">
                         <ul>
                             <li>Brandwith</li>
@@ -240,8 +282,13 @@
                     <button type="button" class="btn btn-primary" data-mdb-ripple-init>Join now</button>
                 </div>
                 <div class="offer">
-                    <h3>Starter</h3>
-                    <p>29$/month</p>
+                    <div id="head-offer">
+                        <div class="square">
+                            <i class="fa-regular fa-square"></i>
+                        </div>
+                        <h3>Starter</h3>
+                        <p>29$/month</p>
+                    </div>
                     <div class="lists">
                         <ul>
                             <li>Brandwith</li>
@@ -279,10 +326,7 @@
 
     
     <div class="container p-3 shadow-sm">
-        <div style="height: 2000px;">
-          <h1>Bootstrap Scroll to Top of Page</h1>
-          <p>Scroll down to see the Scroll to Top button.</p>
-        </div>
+        <div style="height: 2000px;"></div>
     
         <!-- Scroll to Top Button -->
         <button id="scroll-to-top" class="btn btn-dark">
