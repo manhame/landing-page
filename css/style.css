@@ -241,27 +241,31 @@ figcaption{
 }
 .logosclients{
     width: 100%;
-    padding: 50px;
+    /* padding: 50px; */
     display: flex;
     gap: 50px;
     justify-content: center;
 }
-#clients img:hover{ /*ne fonctionne pas ?*/
-    filter: sepia(1);
+.logosclients img:hover{ /*bien tester différents style car certains ne se voient pas*/
+    opacity: 100;
     transition: 1s;
 }
 
 .logosclients img{
     width: 100px;
     height: 100px;
+    opacity:30%;
 }
 
 .parallax h2{
     padding: 50px;
     text-align: center;
+    color: white;
+    font-weight: bold;;
 }
 .parallax p{
     text-align: center;
+    color: white;
 }
 .parallax button{
     padding: 30px;
@@ -269,32 +273,39 @@ figcaption{
     justify-content: center;
     align-items: center;
     background-color: transparent;
+    color: white;
+    border-color: white;
+
+
 }
 .parallax {
     background-image: url('img/parallax.png');
+  filter: brightness(30%);
     height: 100vh;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-  }
-
-  #blog {
-    padding: 50px;
-    display: flex;
-    width: 100%;
-    gap: 30px;
     
 }
 
-  .posts {
+#blog {
+    padding: 50px;
+    display: flex;
+    width: 100%;
+    gap: 25px;
+}
+.post-header i{
+    display: none;
+    color: white;
+}
+.post-header:hover i{
+    display: block;
+}
+.posts {
     display: flex;
     flex-direction: column;
     width: 100%;
-   /* border-radius: 10px;*/
-   /* overflow: hidden;*/
-    /*box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;*/
-    /*transition: 0.5s;*/
 }
 
 .post-header:hover  {
@@ -304,24 +315,18 @@ figcaption{
 }
    
 .post-header {
-    padding: 20px 0px 0px 15px;
     gap: 10px;
     display: flex;
     flex-direction: column;
     width: 100%;
     height: 300px;
-    color: white;
-    /*background-image: radial-gradient(rgb(139, 195, 245), #1294b8);*/
-    /*transition: 0.5s;*/
-    /*overflow: hidden;*/
-   /* background-attachment: fixed;*/
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .post-text {
-    padding: 30px;
+    padding: 20px;
     justify-content: left;
     align-items: flex-start;
 }
@@ -330,10 +335,12 @@ figcaption{
     color:black;
     margin-bottom: 10px;
     font-weight: 700;
+    text-align: left;
 }
 .post-text p {
     font-size: 14px;
     color:black;
+    text-align: left;
 }
 #pricing{
    padding: 100px 100px;
@@ -341,12 +348,37 @@ figcaption{
 #pricing_details{
     display: flex;
     flex-direction: column;
+    width: 100%;
     gap: 20px;
+    background-color: rgb(222, 226, 229);
 }
 #pricing_details h2,p {
     text-align: center;
 }
-
+.stats{
+    display: flex;
+    gap: 20px;
+}
+#stat1{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+#stat2{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+#creativity span{
+    font-weight: bold;
+    font-size: 30px;
+}
+#creativity p{
+    color: rgb(170, 169, 169);
+    text-align: left;
+}
 #creativity {
     display: flex;
     width: 100%;
@@ -359,15 +391,14 @@ figcaption{
     width: 100%;
     justify-content: space-between;
 }
-#creativity form{
-    display: flex;
-    flex-direction: column;
+#pricing_details{
+    width: 100%;
 }
 .pricing_table{
     display: flex;
-    padding: 50px 50px;
-    gap: 30px;
-    background-color: rgb(222, 226, 229);
+    gap: 20px;
+    padding: 10px 10px 10px 30px;
+    
 }
 .offer{
     display: flex;
@@ -375,7 +406,7 @@ figcaption{
     width: 100%;
     align-items: center;
     background-color:white;
-    gap: 10px;
+   
 }
 #head-offer{
     width: 100%;
@@ -385,21 +416,31 @@ figcaption{
 #head-offer h3{
     text-align: center;
 }
-.square {
+#head_offer p{
+    color: rgb(14, 159, 179);
+}
+.offer i {
     display: flex;
-    color:blue;
-    font-size: 30px;
+    color: white;
+    font-size: 10px;
     position: absolute;
     top: 0;
     right: 0;
     transition: 1s;
     opacity: 100;
+    background-color: rgb(13, 95, 218);
+    border-radius: 0% 20% 0% 20%;
+    padding: 5px;
 }
+
+.offer span {
+    color: rgb(14, 159, 179);
+    font-size: 40px;
+}
+
 #creativity ul{
     display: flex;
     flex-direction: column;
-    /*align-items: flex-start;*/
-        
 }
 li{
     display: flex;
@@ -427,9 +468,3 @@ footer pre{
     text-align: center;
     
 }
-/*#btn-back-to-top {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    display: block;
-    }*/
